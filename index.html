@@ -8787,38 +8787,47 @@ H2:before {
 <p>This chapter has described the design of CSS. The next chapter deals with problems experienced by CSS.</p>
 </div>
 
-<div class="chapter" id="ch-problems" title="Problems in CSS">
-<h1 class="chapter" id="h-323">Problems in CSS</h1>
+<div class="chapter" id="ch-problems" title="CSS存在的问题">
+<h1 class="chapter" id="h-323">CSS存在的问题</h1>
 
 
 <p>Problems in, and related to, Cascading Style Sheets are discussed in this chapter. These problems range from simple spelling errors in the specifications, to more complex questions as to whether CSS fulfills its intended role. The chapter is loosely organized along an axis of complexity; the first part describes how simple <em>errors</em> have been handled, and the rest discusses real and perceived <em>problems</em> in CSS.</p>
+<p>本章讨论层叠样式表本身存在或与其密切关联的问题。简单的如规范文本的拼写错误，也有复杂的，如CSS是否很好的发挥了它应有的作用。本章大致按照问题的复杂程度组织，首先从已经处理的简单<em>错误</em>开始。随后，讨论该规范中实际的、已发现的<em>问题</em>。
+</p>
 
 <p>The cascading mechanism plays an important &#8211; and complex &#8211; role in CSS and one section of this chapter is dedicated to problems in the cascading mechanism. Finally, the history of CSS implementations in browsers is outlined.</p>
+<p>层叠机制在CSS中很重要，也很复杂，故有专节探讨。本章的最后简述了CSS浏览器实作的历史。</p>
 
-<h2 id="h-324">Errors in the specifications</h2>
+<h2 id="h-324">规范中的错误</h2>
 
 <p>As with any other specification, errors exist in the CSS specifications. As part of the specification maintenance process, the editors collect errors and publish them in accompanying errata documents. As the list of errors grows, it becomes unwieldy to read the original specification while always having to check the list of errata. Collapsing the two produces a new document which is easier to read.</p>
+<p>跟所有说明书一样，CSS规范中也有错误。作为规范维护流程之一，编辑收集错误并发布于勘误文档中。随着错误累积，阅读规范原文时还要时时检查错误列表，殊为不便。这就需要合并两者产生一份新文件以方便阅读。</p>
 
 <p>The CSS1 specification, which was first published as a W3C Recommendation in December 1996, was republished with all known errors corrected in January 1999. An appendix in the new document lists the changes and sorts them into three categories:</p>
+<p>CSS1规范作为W3C推荐标准于1996年12月发布，并于1999年1月重新发布，包含了所有已知问题的修订。这份新文件的附录部分列出了所有变更，并归为三类：</p>
 
 <ul>
 
 <li>Spelling and typographic mistakes (12 listed). For example, a missing comma and right parenthesis were added.</li>
+<li>拼写和排版错误（12处）。例如，加上了原本漏掉的逗号和右括号。</li>
 
 <li>Errors (28 listed). For example, an invalid declaration (<code class="declaration">font-style: small-caps</code>) was used in an example, and a section was referred to as <q>4.4</q> while <q>4.7</q> is correct.</li>
+<li>错误（28处）。例如，示例中不合法的样式声明（<code class="declaration">font-style: small-caps</code>），引用章节号<q>4.4</q>实际应为<q>4.7</q></li>
 
 <li>Structure and organization (6 listed). For example, the revised edition uses a new style sheet, and the appendix describing changes has been added.</li>
+<li>结构和组织（6处）。例如，修订版使用了新的样式表，增加了附录以描述变更。</li>
 
 </ul>
 
 <p>A similar effort is planned for CSS2 but since it will also incorporate semantic changes (in addition to errors), it will most likely be given a new version number.</p>
-
+<p>CSS2也有类似修订计划，且因为将引入语义变化（而不仅是错误），规范的版本号也会更新。</p>
 
 <h2 id="h-325">Problems with the specifications</h2>
 
 <p>Fixing specification <em>errors</em>, as described in the previous section, is not very controversial. Identifying and correcting real and perceived <em>problems</em> in specifications is much more problematic. There are often conflicting interests between designers and implementors: a designer's solution can easily become an implementor's problem. A personal account of the problems in the CSS specifications as perceived by this author is given in this section.</p>
+<p>像上面所描述的对规范<em>错误</em>的更正没有什么争议。识别和改正规范在实际使用中和主观感受上的<em>问题</em>则非常成问题。网页设计师和规范实作者往往存在利益冲突：设计师的解决方案很可能变成实作者的难题。下面这节列出了作者本人主观感受上认为CSS规范存在的问题。</p>
 
-<h3 id="h-326">Missing functionality</h3>
+<h3 id="h-326">功能缺失</h3>
 
 <p>Authoring a technical specification is often a balancing act between functionality on one side and implementability on the other. The functionality must be sufficiently rich to address the needs of its users, and simple enough to be implemented interoperably.</p>
 
