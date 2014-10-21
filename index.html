@@ -8830,83 +8830,111 @@ H2:before {
 <h3 id="h-326">功能缺失</h3>
 
 <p>Authoring a technical specification is often a balancing act between functionality on one side and implementability on the other. The functionality must be sufficiently rich to address the needs of its users, and simple enough to be implemented interoperably.</p>
+<p>制定技术规范常需在功能和实现难度两者间寻求平衡。一方面功能必须足够强大以满足用户需求，另一方面又要足够简单以确保不同的实现能一致可互操作。</p>
 
 <p>Traditionally, CSS has valued simplicity over functionality. For example, the abstract of CSS1 states that it is a <q>simple style sheet mechanism</q>. This author believes this has been a correct choice, but there are still some areas where CSS should have offered richer functionality:</p>
+<p>传统上，CSS更注重简单而不是功能强大。比如，CSS1的摘要称CSS是一种<q>简单的样式表机制</q>。本人相信这是正确的选择，但仍然有一些领域CSS应该提供更多功能：</p>
 
 <ul>
 
 <li>color contrast: It is not possible to ensure a certain contrast between the text color and the background.</li>
+<li>色彩对比度：CSS无法确保文字颜色和背景之间保持一定的对比度。</li>
 
 <li>font-size: It is not possible to specify the font size as a function of the element's width. The lack of this functionality makes it difficult to produce, for example, slide presentations that scale from one screen size to another.</li>
+<li>font-size：CSS无法指定字体大小依照元素的宽度变化。缺少此功能，就难以实现像根据屏幕大小缩放幻灯片这样的需求。</li>
 
 
 <li>line-height: It is not possible to set the line height to be a function of the element width. To increase legibility, line heights should become higher when elements grow wider.</li>
+<li>line-height：CSS无法设定行高依照元素宽度变化。为了让文字更易辨识，在元素变宽时，也应增大行高。
 
 <li>centering: It is not possible to center an element vertically relative to the screen.</li>
+<li>居中：CSS无法让元素相对于屏幕垂直居中。</li>
 
 </ul>
 
 <p>In addition to the specific list above, there are some general areas where some extra effort would have been worthwhile:</p>
+<p>除了上面列出的，CSS应该在一些更一般的领域投入更多的努力：</p>
 
 <ul>
 
 <li>user interface: CSS was primarily designed to present documents, not user interfaces. However, many of the components needed to describe a user interface are present, and some additional functionality could have made it possible to also design user interfaces. Most notably, it should have been possible to describe the presentation of navigation lists.</li>
+<li>
+<li>用户界面：最初设计CSS，主要是用来呈现文本，而不是呈现用户界面。不过，描述用户界面所需的组件有许多CSS已经包含，而且一些新增的功能已使得CSS也可用来设计用户界面。一个最常见的例子是，已可用CSS来描述如何呈现导航列表。
 
 <li>multi-column: It is not possible to describe multi-column layout where content automatically flows from one column to another.</li>
+<li>多栏：CSS无法描述多栏布局——内容排满一栏会自动排到下一栏。</li>
 
 <li>headers/footers: It is not possible to describe headers and footers on pages.</li>
+<li>页眉/页脚：CSS无法描述分页的页眉和页脚。
 
 </ul>
 
 <p>Some of the above features are likely to be added in future versions of CSS, just like CSS2 added some frequently requested features:</p>
+<p>CSS未来版本可能加入部分上述特性，正如CSS2加入了一些广为要求的特性：</p>
 
 <ul>
 
 <li>roll-overs: In CSS1, it was not possible to describe presentation where color/background of an element changed as the pointer <em>rolled over</em> or <em>hovered</em> over an element. Instead, authors used JavaScript to achieve this effect. This functionality was successfully added in CSS2 through the <code class="selector">:hover</code> pseudo-selector.</li>
+<li>悬停：在CSS1中无法描述当指针在元素上<em>划过</em>或<em>悬停</em>时元素色彩和背景的改变。网页作者只能用JavaScript来实现这样的效果。CSS2顺利加入了此功能，即<code class="selector">:hover</code>伪选择器。</li>
 
 <li>positioning: In CSS1, it was not possible to take elements out of the flow and place them over other content. CSS2 added the <em>positioning</em> of elements. The proposal was worked out by representatives from Microsoft and Netscape and published as a W3C working draft <a href="#WD-positioning_1997">[WD-positioning&nbsp;1997]</a> before being integrated into CSS.</li>
-
+<li>定位：在CSS1中无法让元素脱离流而置于其他内容之上。CSS2加入了元素<em>定位</em>。微软和网景的代表提出了提案，在纳入CSS之前以单独的W3C工作草案<a href="#WD-positioning_1997">[WD-positioning&nbsp;1997]</a>发布。</li>
 
 <li>page breaks: CSS1 did not address paged media, and page breaks were among the features added in CSS2.</li>
+<li>分页：CSS1没有纳入分页媒体的需求，CSS2新增特性则包括了分页相关设置。</li>
 
 </ul>
 
 <p>These additions are examples of changes in CSS due to feedback from authors and vendors.</p>
 
 <h3 id="h-327">Excessive functionality</h3>
+<h3 id="h-327">过剩的功能</h3>
 
 <p>Like missing functionality, excessive functionality can be harmful to a specification. Implementors can deem the specification to be too complex and may choose to implement only parts of the specification or ignore it altogether. The result is poor or missing interoperability.</p>
+<p>像功能缺乏一样，功能过剩也可能伤害规范。实作者会认为规范过于复杂而只部分实现规范或完全无视规范。结果就是实作糟糕和缺乏互操作性。</p>
 
 <p>The features listed below are described in the CSS specifications but, arguably, could have been left out without significant loss. The features are relatively complex to implement and it has taken a long time to achieve interoperability.</p>
+<p>下面所列的特性虽已在CSS规范中定义，但可以说，规范中不包括它们也没有大问题。这些特性实现起来相对复杂，很久之后才达到互操作性。</p>
 
 <ul>
 
 <li>first-line and first-letter: The first-line and first-letter pseudo-elements make it possible to style content based on the layout of the page rather than the structure of the document. These kinds of features are often referred to as being <em>layout-driven</em>. CSS1 included these pseudo-elements to be able to offer authors some features they could otherwise not achieve. However, the cost of implementing these features far outweighted the benefits of the visual effects they provided.</li>
+<li>first-line和first-letter：first-line和first-letter伪元素让网页作者可以根据页面排版结果而不是文档结构来设定样式。这类特性通常被称作是<em>排版驱动</em>的。CSS1包括了这些伪元素，因为少了它们，有些设计效果是无法实现的。然而，实现这些特性的成本远大于它们提供的视觉效果的好处。</li>
 
 <li>box model: The box model of CSS includes padding, border and margin areas around all elements. For block-level elements, this makes sense. For inline elements, however, having three areas is excessive; having a padding area would be sufficient.</li>
+<li>盒模型：CSS的盒模型下所有元素都有padding、border和margin区域。对于块级元素这是有意义的。然而对于行内元素，三个区域就繁琐了，有padding区域就够了。</li>
 
 <li>contextual selectors: Contextual selector allow elements to be selected based on their place in the document's tree structure. Supporting contextual selector made it possible to, e.g., remove borders from images that where hyperlinks. This was perceived to be a requirements as one of Netscape's extensions could express it. However, supporting contextual selectors is complex unless implementations already kept a stack of open elements. Typically, this was not the case and contextual selectors were not interoperably supported until several years after the publication of CSS1. As such, contextual selectors delayed the deployment of CSS1. On the other hand, by having contextual selectors, CSS contributed to the understanding of HTML as a <em>structured</em> markup language.</li>
+<li>上下文选择器：通过上下文选择器可以基于元素在文档树结构中的位置来选择元素。有了上下文选择器，我们就能做到——例如——去除超链接图片的边框。这被视为需求，因为网景的一个扩展就可以表达类似设置。然而，实作如果不保持一个所有尚未闭合元素的堆栈，就很难支持上下文选择器。结果直到CSS1发布数年后，上下文选择器还没有得到可互操作的支持。就这样，上下文选择器延迟了CSS1的部署。不过另一方面，有了上下文选择器，CSS有助于理解HTML是<em>结构</em>标记语言。</li>
 
 </ul>
 
 <p>It may also be argued that other parts of CSS2 are excessive since they have not been widely implemented. These parts include:</p>
+<p>CSS2的一些其他部分也存在争议，因为它们没有被广泛实现。包括：</p>
 
 <ul>
 
 <li><code class="property">text-shadow</code>: This property was added in CSS2 to generate shadow effects on text to deter authors from using images instead of text. The property is complex to implement and can only replace a limited set of the visual effects designers want to apply to text.</li>
+<li><code class="property">text-shadow</code>：CSS2加入这一属性，支持在文字上产生阴影效果，防止网页作者用图片替代文字。但这属性实现复杂，且设计师想要的文字视觉效果，它也只能达成有限几种。</li>
 
 
 <li><code class="property">marks</code>: In high-quality printing, cross marks are often printed in the page margins to align sheets of paper, and cut marks indicate where sheets should be cut. The <code class="property">marks</code> property was added to CSS2 to toggle on and off the printing of marks. Turning these marks on and off may also be handled in the application's print dialog box.</li>
+<li><code class="property">marks</code>：在高质量打印中，页边会印上记号，十字记号用来对齐纸张，切割记号用来指示裁切位置。CSS2加入了<code class="property">marks</code>属性，可开关打印记号。但开关记号也可以在应用的打印对话框里设置。</li>
 
 <li><code class="property">markers</code>: Markers are typically used with list-items to mark the beginning of a new item. CSS1 allowed the <em>type</em> of marker to be described (for example, whether the list-item should be marked with a circle or a number). CSS2 offers a richer, more complex way of describing markers through pseudo-elements.</li>
 
+<li><code class="property">markers</code>：markers通常用在列表项前，表示开始一个新项。CSS1可以描述marker的<em>类型</em>（例如，在列表项前标个圆点或数字序号）。CSS2提供了更丰富更复杂的方式来通过伪元素描述marker。</li>
+
 <li>downloadable fonts: Fonts are essential resources when presenting documents. Typical desktop computers have around 20 font families available and handheld devices have fewer. Being able to download fonts from the web has the potential of increasing the richness of presentations. CSS2 offers a mechanism for describing and selecting fonts from the web. However, the feature is not much used. Two major reasons for this might be: First, there is no universal font format which all vendors support; and second, font designer want to be compensated for their work and no suitable payment mechanism is available.</li>
+<li>可下载字体：在呈现文档时字体时重要的资源。通常桌面电脑有约20种字体家族可用，手持设备则少得多。可以从web下载字体具有提升呈现丰富度的潜力。CSS2提供了机制来描述和选择来自web的字体。然而这特性不常用。两个主要原因时：第一，没有所有厂商都支持的通行字体格式；第二，字体设计者想要工作报偿，而缺乏合适的支付机制。</li>
 
 <li>the <code class="property">font-size-adjust property</code>: This property addresses a problem which can occur when one font family is substituted for another. The legibility of the two fonts can vary considerably and the <code class="value">x-height</code> value is often more important than the font size. The purpose of the <code class="property">font-size-property</code> is for designers to indicate that the x-height of the font should be preserved rather than the font size.</li>
+<li><code class="property">font-size-adjust 属性</code>：此属性解决一个字体家族替换另一个时可能出现的问题。两个字体的字形可辨识度可能相差甚远，而<code class="value">x-height</code>值通常比字体大小更重要。<code class="property">font-size-property</code>的目的是让设计师可以指示应保持字体的x-height而不是字体的大小。</li>
 
 </ul>
 
 <p>Although none of the features listed above have been widely implemented, this author argues that all of them describe useful functionality in a sensible manner, and that the functionality will be used when/if implemented.</p>
+<p>尽管上述特性未被广泛实现，但笔者认为所有这些特性都以合理的方式描述了有用的功能，一旦实现，人们就会使用这些功能。
 
 <h3 id="h-328">Poor design</h3>
 
