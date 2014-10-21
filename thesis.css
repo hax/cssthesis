@@ -1,16 +1,17 @@
 del { background: red }
 ins { background: green }
 
-html { margin: 0; padding: 0; /* for chinese text display clearly */font-size:63%}
+html { margin: 0; padding: 0 }
 
 body {
   font-family: "Georgia", serif;
   color: black;
   background: white;
   counter-reset: table-no figure-no chapter;
-/* for chinese text display clearly*/
-  font-size:1.4em;
-  line-height:1.5;
+}
+:lang(zh) body {
+  /* for chinese text display clearly*/
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5 {
@@ -55,12 +56,18 @@ div.toc h2:before {
 div.toc h3.chapter:before {
   content: "Chapter " counter(chapter-toc) ": "; 
 }
+:lang(zh) div.toc h3.chapter:before {
+  content: "第" counter(chapter-toc) "章 "; 
+}
 
 div.toc h3.chapter {
   counter-increment: chapter-toc;
 }
 
 div.chapter h1:before {
+  content: "Chapter " counter(chapter) ": "; 
+}
+:lang(zh) div.chapter h1:before {
   content: "第" counter(chapter) "章 "; 
 }
 
@@ -135,20 +142,29 @@ p {
 img.page { width: 100% }
 
 blockquote, blockquote pre {
+  font-style: italic;
   margin: 0.2em 0;
   padding: 0.8em;
   background: #EEE;
-
+}
+:lang(zh) blockquote, blockquote pre {
+  font-style: normal;
+  font-family: 'Adobe Fangsong Std', 'STFangsong', '仿宋_gb2312', serif;
 }
 
 blockquote em {
   font-style: normal;
 }
+:lang(zh) blockquote em {
+  font-weight: bolder;
+}
 
 blockquote cite {
   display: block;
+}
+:lang(zh) blockquote cite {
   /* align the source to right is chinese's convention */
-  text-align:right;
+  text-align: right;
 }
 
 /* links */
@@ -260,8 +276,11 @@ p.author {
 
 html { background: black; }
 body {
-  margin: 0px 0px 10px 190px;
+  margin: 0px 0px 10px 150px;
   padding: 0px;
+}
+:lang(zh) body {
+  margin-left: 190px;
 }
 
 #menu {
@@ -273,7 +292,8 @@ body>#menu {  /* this selector is a hack to hide "fixed" from IE */
   position: fixed; 
 }
 
-#menu { top: 0px; left: 0px; width: 170px;  }
+#menu { top: 0px; left: 0px; width: 130px;  }
+:lang(zh) #menu { width: 170px; };
 #menu { padding: 10px 10px 10px;  color: white; background: #000; font-size: 12px; font-weight: bold; font-family: sans-serif  }
 #menu ul { margin: 0px; padding: 0px }
 #menu ul ul { margin-left: 10px;  }
