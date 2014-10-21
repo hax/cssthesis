@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <link rel="stylesheet" title="full view" href="thesis.css" media="screen" type="text/css" />
 <link rel="stylesheet" media="print" href="errata.css" type="text/css" />
@@ -84,7 +84,7 @@ html, body { height: 100%; overflow-y: hidden }
 
 <h1 class="title">Cascading Style Sheets</h1>
 
-<h2>Håkon Wium Lie</h2>
+<h2>HÃ¥kon Wium Lie</h2>
 
 
 <img alt="Universtity of Oslo's logo" id="logo" src="i/uio-logo-l.png" />
@@ -97,7 +97,7 @@ html, body { height: 100%; overflow-y: hidden }
 
 <div class="imprint">
 
-<p>© Håkon Wium Lie, 1994-2005</p>
+<p>Â© HÃ¥kon Wium Lie, 1994-2005</p>
 
 <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/">Creative Commons Attribution-NonCommercial 2.5 License</a>.</p>
 
@@ -1043,11 +1043,11 @@ votes.
 
 <p>So, somewhat by accident, I was the first person to type the now ubiquitous string <q>HTML 3.2</q> into a computer. A few small key strokes for a man, a giant leap for the web.</p>
 
-<p>Inside W3C, the CSS Working Group has been the keeper of the flame. Some highly intelligent and dedicated people joined the group over the years. I would especially like to thank Ian Hickson, David Baron, Tantek Çelik, Daniel Glazman and Eric Meyer. Additionally, Steven Pemberton chaired the first W3C Workshop on Style Sheets, Chris Lilley served as chair for many years, and Ian Jacobs contributed his editorial skills. I am grateful to all of you.</p>
+<p>Inside W3C, the CSS Working Group has been the keeper of the flame. Some highly intelligent and dedicated people joined the group over the years. I would especially like to thank Ian Hickson, David Baron, Tantek Ã‡elik, Daniel Glazman and Eric Meyer. Additionally, Steven Pemberton chaired the first W3C Workshop on Style Sheets, Chris Lilley served as chair for many years, and Ian Jacobs contributed his editorial skills. I am grateful to all of you.</p>
 
-<p>In 1999, when CSS1 and CSS2 had been written, I joined Opera Software to ensure that the specifications were implemented correctly by at least one browser. Thanks go to Jon von Tetzchner and Geir Ivarsøy for founding a company worth working for. Geir, along with Karl Anders Øygard, is also the mastermind behind Opera's display engine that makes CSS shine on screens of all sizes. Thanks also go to Snorre Grimsby, Rijk van Geijtenbeek, Brian Wilson and Sue Sims for supporting CSS internally and externally.</p>
+<p>In 1999, when CSS1 and CSS2 had been written, I joined Opera Software to ensure that the specifications were implemented correctly by at least one browser. Thanks go to Jon von Tetzchner and Geir IvarsÃ¸y for founding a company worth working for. Geir, along with Karl Anders Ã˜ygard, is also the mastermind behind Opera's display engine that makes CSS shine on screens of all sizes. Thanks also go to Snorre Grimsby, Rijk van Geijtenbeek, Brian Wilson and Sue Sims for supporting CSS internally and externally.</p>
 
-<p>Many people have been helpful while writing this thesis. I am indebted to Paul Grosso, Vincent Quint, Pamela Gennusa, Ethan Munson, Joe English, Harvey Bingham, Paul Prescod, Jany Quintard, Yann Dirson, Dave Pawson, Ian Castle, Didier P. H. Martin, Geir Ove Grønmo and Bette Harvey for answering my many questions about the past. I am grateful to Joe English, Wayne Gramlich, James Mason, Jeff Moore and Dan Connolly for allowing me to quote from their unpublished writings. Gunilla Petersén of the Royal Swedish Opera directed me to the inspirational Wagner quote.</p>
+<p>Many people have been helpful while writing this thesis. I am indebted to Paul Grosso, Vincent Quint, Pamela Gennusa, Ethan Munson, Joe English, Harvey Bingham, Paul Prescod, Jany Quintard, Yann Dirson, Dave Pawson, Ian Castle, Didier P. H. Martin, Geir Ove GrÃ¸nmo and Bette Harvey for answering my many questions about the past. I am grateful to Joe English, Wayne Gramlich, James Mason, Jeff Moore and Dan Connolly for allowing me to quote from their unpublished writings. Gunilla PetersÃ©n of the Royal Swedish Opera directed me to the inspirational Wagner quote.</p>
 
 <p>This thesis concerns style sheet proposals for the web. I am grateful to the authors of the proposals for contributing a very interesting topic of research. Having analyzed their proposals without having access to their minds, I may have misunderstood or misinterpreted their work. If so, please contact me. Thanks also go to the participants on the www-talk, www-html and www-style mailing lists. Without the communities that formed on the mailing lists, the web would not have existed as we know it today.</p>
 
@@ -1058,7 +1058,7 @@ votes.
 <p>I would like to thank the people who created <em class="product">FrameMaker</em>, <em class="product">GNU-emacs</em>, and the <em class="product">Prince</em> formatter. FrameMaker taught me typography, GNU-emacs gracefully accepted all my handcrafted tags, and Prince put this thesis onto paper.</p>
 
 <p class="author">Oslo, March 2005<br />
-Håkon Wium Lie</p>
+HÃ¥kon Wium Lie</p>
 </div>
 
 
@@ -1158,7 +1158,7 @@ Håkon Wium Lie</p>
 
 <h2 id="h-28">Style sheets</h2>
 
-<p>Style sheets were proposed as an alternative to the evolution of HTML from a structural language to a presentational language. The term <a href="#style_sheet" class="term">style sheet</a> is used in traditional publishing as a way to <q>ensure consistency</q> <a href="#Chicago_1993">[Chicago&nbsp;1993]</a> in documents. In the traditional publishing process, a manuscript is accompanied by a style sheet which serves as a <q>running account of rules about diction and language usage adopted for a particular manuscript</q> <a href="#Bruggemann-Klein_1992">[Brüggemann-Klein&amp;Wood&nbsp;1992]</a>.</p>
+<p>Style sheets were proposed as an alternative to the evolution of HTML from a structural language to a presentational language. The term <a href="#style_sheet" class="term">style sheet</a> is used in traditional publishing as a way to <q>ensure consistency</q> <a href="#Chicago_1993">[Chicago&nbsp;1993]</a> in documents. In the traditional publishing process, a manuscript is accompanied by a style sheet which serves as a <q>running account of rules about diction and language usage adopted for a particular manuscript</q> <a href="#Bruggemann-Klein_1992">[BrÃ¼ggemann-Klein&amp;Wood&nbsp;1992]</a>.</p>
 
 <p>In the 1980's, publishing changed dramatically with the introduction of personal computers for use in the preparation of manuscripts. <a href="#electronic_publishing" class="term">Electronic publishing</a> offered tools to ease all stages of publishing from authoring, through editing, to printing. In electronic publishing, the term <a href="#style_sheet" class="term">style sheets</a> came to mean a set of rules regarding how to <em>present</em> content, rather than rules for how to <em>author</em> content. Style sheets would be specified by the <a class="term" href="#designer">designer</a> and sent to the typesetter before printing. Typically, they would describe the visual layout of a text-centric document, including fonts, colors and white space.</p>
 
@@ -1166,7 +1166,7 @@ Håkon Wium Lie</p>
 
 <p>Style sheets were available in electronic publishing systems from around 1980 (see Chapter 2 and 3). Combined with structured documents, style sheets offered <a href="#late_binding" class="term">late binding</a> <a href="#Reid_1989">[Reid&nbsp;1989]</a> of content and presentation where the content and the presentation are combined after the authoring is complete. This idea was attractive to publishers for two reasons. First, a consistent style could be achieved across a range of publications. Second, the author did not have to worry about the presentation of the publication but could concentrate on the content.</p>
 
-<p>Indeed, some authors found it liberating not having to worry about presentational details in the authoring process <a href="#Cailliau_1997">[Cailliau&nbsp;1997]</a>. However, most authors ended up using authoring systems which emphasizes the presentation rather than the structure <a href="#Sorgaard_1996">[Sørgaard&nbsp;1996]</a>.</p>
+<p>Indeed, some authors found it liberating not having to worry about presentational details in the authoring process <a href="#Cailliau_1997">[Cailliau&nbsp;1997]</a>. However, most authors ended up using authoring systems which emphasizes the presentation rather than the structure <a href="#Sorgaard_1996">[SÃ¸rgaard&nbsp;1996]</a>.</p>
 
 <h3 id="h-29">WYSIWYG &ndash; a competing model</h3>
 
@@ -1248,7 +1248,7 @@ The example consists of two main parts: selector ('H1') and declaration ('color:
 
 <p>Style sheet languages and structured document formats are mutually dependent on each other. Without style sheets, structured documents cannot be presented, and without structured documents there is nothing for style sheets to present. Due to the strong relationship between the two, it is important to understand structured documents when studying style sheet languages. Some <a class="term" href="#structured_document_system">structured document systems</a> that have been most influential on style sheet languages are discussed in this chapter.</p>
 
-<p>In a seminal work titled <em class="title">Structured Documents</em> <a href="#Andre_1989">[André,&nbsp;et&nbsp;al.&nbsp;1989]</a>, the topic is defined&nbsp;as:</p>
+<p>In a seminal work titled <em class="title">Structured Documents</em> <a href="#Andre_1989">[AndrÃ©,&nbsp;et&nbsp;al.&nbsp;1989]</a>, the topic is defined&nbsp;as:</p>
 
 <blockquote>A document may be described as a collection of objects with higher-level objects formed from more primitive objects. The object relationships represent the logical relationships between components of the document. For example, the present document is described as a book at the highest level. The book is subdivided into chapters, each chapter into sections, subsections, paragraphs, and so forth. Such a document organization has come to be known as the <em>structured document</em> representation.</blockquote>
 
@@ -2620,7 +2620,7 @@ HTML+ must like HTML refrain from falling into eiter trap, of being too related 
 
 </ul>
 
-<p>This chapter does not cover proprietary style sheet systems (such as Microsoft Word, FrameMaker, Interleaf, Panorama, Lector, ViewPort and ReportLab's RML2PDF), nor does it discuss systems that have been been described in articles but not used in practice (such as <a href="#Bruggemann-Klein_1992">[Brüggemann-Klein&amp;Wood&nbsp;1992]</a> and <a href="#Weitzman_1994">[Weitzman&amp;Wittenberg&nbsp;1994]</a>). Also, two authoring systems (Scribe, LaTex) that also have style sheet languages associated with them are discussed in the previous chapter instead of here.</p>
+<p>This chapter does not cover proprietary style sheet systems (such as Microsoft Word, FrameMaker, Interleaf, Panorama, Lector, ViewPort and ReportLab's RML2PDF), nor does it discuss systems that have been been described in articles but not used in practice (such as <a href="#Bruggemann-Klein_1992">[BrÃ¼ggemann-Klein&amp;Wood&nbsp;1992]</a> and <a href="#Weitzman_1994">[Weitzman&amp;Wittenberg&nbsp;1994]</a>). Also, two authoring systems (Scribe, LaTex) that also have style sheet languages associated with them are discussed in the previous chapter instead of here.</p>
 
 <p>Each review starts with a short description of the historical context of the language, followed by a technical review. The reviews are not exhaustive but give a general overview of each language and discuss points of interest along the way. Document and style sheet fragments are used extensively in the discussions since I believe style sheet languages are best understood by looking at examples.</p>
 
@@ -3050,7 +3050,7 @@ HTML+ must like HTML refrain from falling into eiter trap, of being too related 
 
 <p>FOSI's formatting model is based on a sequence of <a href="#area" class="term">areas</a> being poured into the <a href="#layout_area" class="term">layout area</a>. Normally, block-level elements are positioned relative to the layout area. However, FOSI also provides a way of referencing the position of the parent element to create the appearance of a box model <a href="#FOSI_1997">[FOSI&nbsp;1997]</a>:</p>
 
-<blockquote><!--errata: space removed after "T"-->The syntax for indents allows for specification <em class="ed">[..]</em> with respect to the text margin determined by the parent element's indent, for example, "@+2pi" or "@­2pi". The delimiter "@" can be used to specify that the indent is relative to the text margin established by the element's parent, including any indenting that may have been applied.</blockquote>
+<blockquote><!--errata: space removed after "T"-->The syntax for indents allows for specification <em class="ed">[..]</em> with respect to the text margin determined by the parent element's indent, for example, "@+2pi" or "@Â­2pi". The delimiter "@" can be used to specify that the indent is relative to the text margin established by the element's parent, including any indenting that may have been applied.</blockquote>
 
 <p>Here is an example of using this feature:</p>
 
@@ -3627,7 +3627,7 @@ HTML+ must like HTML refrain from falling into eiter trap, of being too related 
 (process-children)))
 </pre>
 
-<p>The example is from [Germán&nbsp;1997]. More advanced flow objects allow content, for example, to be presented in a multi-column layout, to appear in side notes and to generate footnotes. One missing feature is that of floating images with surrounding text.</p>
+<p>The example is from [GermÃ¡n&nbsp;1997]. More advanced flow objects allow content, for example, to be presented in a multi-column layout, to appear in side notes and to generate footnotes. One missing feature is that of floating images with surrounding text.</p>
 
 <p>A significant amount of work has gone into DSSSL to make sure the flow objects can support multi-directional text.</p>
 
@@ -3693,9 +3693,9 @@ HTML+ must like HTML refrain from falling into eiter trap, of being too related 
 <h2 id="h-107"><a id="p93" name="p93">P94</a></h2>
 
 
-<p>The P language was developed by Vincent Quint and Irène Vatton as part of their long-standing research on structured documents at INRIA in Grenoble <a href="#Thot_2001">[Thot&nbsp;2001]</a>. Together, the <q>T</q> language (for Transformation), the <q>S</q> (for Structure) and <q>P</q> (for Presentation) form the <em>Thot languages</em>. These are supported by a software library known as the <em>Thot library</em>. The purpose of the Thot library is to facilitate the creation of <q>document centered applications based on the concept of structured active documents</q>.</p>
+<p>The P language was developed by Vincent Quint and IrÃ¨ne Vatton as part of their long-standing research on structured documents at INRIA in Grenoble <a href="#Thot_2001">[Thot&nbsp;2001]</a>. Together, the <q>T</q> language (for Transformation), the <q>S</q> (for Structure) and <q>P</q> (for Presentation) form the <em>Thot languages</em>. These are supported by a software library known as the <em>Thot library</em>. The purpose of the Thot library is to facilitate the creation of <q>document centered applications based on the concept of structured active documents</q>.</p>
 
-<p>The work on Thot started in 1983 and initial results were first published in 1986. Several industry collaborations followed and Thot formed the core of several commercial products, including Grif and Symposia. In 1995, INRIA became the European host of the World Wide Web Consortium, and Vincent Quint and Irène Vatton joined as W3C staff in 1996. The work on Thot continued in W3C's Amaya Web editor which uses the Thot library. Amaya is a test-bed application for W3C specifications, and CSS, XHTML, SVG, MathML and XML are experimentally supported by Amaya. Typically, Amaya adds support for a new specification by translating the external language into one of the internal languages (P, S or T). Amaya's formatter is built around the P language and the default formatting of the markup languages supported by Amaya is described in P. Also, Amaya supports CSS by generating P rules that are subsequently interpreted by the formatter.</p>
+<p>The work on Thot started in 1983 and initial results were first published in 1986. Several industry collaborations followed and Thot formed the core of several commercial products, including Grif and Symposia. In 1995, INRIA became the European host of the World Wide Web Consortium, and Vincent Quint and IrÃ¨ne Vatton joined as W3C staff in 1996. The work on Thot continued in W3C's Amaya Web editor which uses the Thot library. Amaya is a test-bed application for W3C specifications, and CSS, XHTML, SVG, MathML and XML are experimentally supported by Amaya. Typically, Amaya adds support for a new specification by translating the external language into one of the internal languages (P, S or T). Amaya's formatter is built around the P language and the default formatting of the markup languages supported by Amaya is described in P. Also, Amaya supports CSS by generating P rules that are subsequently interpreted by the formatter.</p>
 
 <p>In order to support CSS in Amaya it was necessary to extend the P language in some areas. For example, all CSS length units are now supported in P and a set of properties have been added to support padding, borders and margins around elements. For research purposes, it is interesting to study the P language before the influx of CSS and the web. The discussion below is therefore based on the P language as it existed in 1994 and is referred to as <em>P94</em> <a href="#Quint_1994">[Quint&nbsp;1994]</a>.</p>
 
@@ -9326,7 +9326,7 @@ anchor { -o-link: next }
 </pre>
 </li>
 
-<li>How are style sheets used on the web today? The use of style sheets in word processing applications has been researched <a href="#Sorgaard_1996">[Sørgaard&nbsp;1996]</a>, but the use of style sheets on the web has not been thoroughly investigated. What features of CSS are being used? Are style sheets only used to encode what HTML's <code class="element">FONT</code> element already represents in a document, or are sites using CSS to fully describe their design? 
+<li>How are style sheets used on the web today? The use of style sheets in word processing applications has been researched <a href="#Sorgaard_1996">[SÃ¸rgaard&nbsp;1996]</a>, but the use of style sheets on the web has not been thoroughly investigated. What features of CSS are being used? Are style sheets only used to encode what HTML's <code class="element">FONT</code> element already represents in a document, or are sites using CSS to fully describe their design? 
 </li>
 
 <li>Can cascading be used to resolve other conflicts between users, programs and authors? For example, can cascading be used to determine GUI settings of an application? In many ways it is similar to document presentation; the author (programmer) would like to suggest default settings, but the user should be given the final word. Could CSS be used to express user preferences for applications?</li>
@@ -9888,7 +9888,7 @@ anchor { -o-link: next }
 
 <ul>
 
-<li>A definition of how the term is used in paper-based publishing is found in <a href="#Bruggemann-Klein_1992">[Brüggemann-Klein&nbsp;1992]</a>: 
+<li>A definition of how the term is used in paper-based publishing is found in <a href="#Bruggemann-Klein_1992">[BrÃ¼ggemann-Klein&nbsp;1992]</a>: 
 
 <blockquote>A running account of rules about diction and language usage adopted for a particular manuscript</blockquote>
 </li>
@@ -10051,9 +10051,9 @@ anchor { -o-link: next }
 
 <dd><span class="title">Welcome to Amaya</span>; W3C web page, 2004; Available from <a class="url" href="http://www.w3.org/Amaya/">http://www.w3.org/Amaya/</a>; Accessed 25 Oct 2004<span class="local-copy"> (<a href="archive/www.w3.org/Amaya/index.html">local copy</a>)</span>.</dd>
 
-<dt><a id="Andre_1989" name="Andre_1989">[André, et al. 1989]</a></dt>
+<dt><a id="Andre_1989" name="Andre_1989">[AndrÃ©, et al. 1989]</a></dt>
 
-<dd><span class="author">André, J., Furuta, R., and Quint, V. (editors)</span>; <span class="title">Structured Documents</span>; The Cambridge series on electronic publishing, Cambridge University Press, 1989</dd>
+<dd><span class="author">AndrÃ©, J., Furuta, R., and Quint, V. (editors)</span>; <span class="title">Structured Documents</span>; The Cambridge series on electronic publishing, Cambridge University Press, 1989</dd>
 
 <dt><a id="Andreessen_1993a" name="Andreessen_1993a">[Andreessen 1993a]</a></dt>
 
@@ -10171,9 +10171,9 @@ anchor { -o-link: next }
 
 <dd><span class="author">Bosak, J.</span>; <span class="title">RE: Positioning HTML Elements with Cascading Style Sheets</span>; Message posted to www-style@w3.org Feb 03 1997; Available from <a class="url" href="http://lists.w3.org/Archives/Public/www-style/1997Feb/0033.html">http://lists.w3.org/&#8203;Archives/&#8203;Public/&#8203;www-style/&#8203;1997Feb/0033.html</a>; Accessed 25 Oct 2004<span class="local-copy"> (<a href="archive/lists.w3.org/Archives/Public/www-style/1997Feb/0033.html">local copy</a>)</span>.</dd>
 
-<dt><a id="Bruggemann-Klein_1992" name="Bruggemann-Klein_1992">[Brüggemann-Klein&amp;Wood 1992]</a></dt>
+<dt><a id="Bruggemann-Klein_1992" name="Bruggemann-Klein_1992">[BrÃ¼ggemann-Klein&amp;Wood 1992]</a></dt>
 
-<dd><span class="author">Brüggemann-Klein, A., Wood, D.</span>; <span class="title">Electronic Style Sheets</span>; Interner Bericht 45, Institut für Informatik, Universitat Freiburg, 1992</dd>
+<dd><span class="author">BrÃ¼ggemann-Klein, A., Wood, D.</span>; <span class="title">Electronic Style Sheets</span>; Interner Bericht 45, Institut fÃ¼r Informatik, Universitat Freiburg, 1992</dd>
 
 <dt><a id="Bray_2002" name="Bray_2002">[Bray 2002]</a></dt>
 
@@ -10322,15 +10322,15 @@ anchor { -o-link: next }
 
 <dt><a id="Furuta_1982" name="Furuta_1982">[Furuta, et al. 1982]</a></dt>
 
-<dd><span class="author">Furuta, R., Scofield, J. and Shaw, A</span>; <span class="title">Document Formatting Systems: Survey, Concepts, and Issues</span>; Computing Surveys, 14, 3, 417­472. (September 1982) ISSN:0360-0300</dd>
+<dd><span class="author">Furuta, R., Scofield, J. and Shaw, A</span>; <span class="title">Document Formatting Systems: Survey, Concepts, and Issues</span>; Computing Surveys, 14, 3, 417Â­472. (September 1982) ISSN:0360-0300</dd>
 
 <dt><a id="Furuta_1992" name="Furuta_1992">[Furuta 1992]</a></dt>
 
 <dd><span class="author">Furuta, R</span>; <span class="title">Important papers in the history of document preparation systems: basic sources</span>; Electronic Publishing&mdash;Origination, Dissemination, and Design; 5 (1), 19-44, 1992; Available from <a class="url" href="http://cajun.cs.nott.ac.uk/compsci/epo/papers/volume5/issue1/ep057rf.pdf">http://cajun.cs.nott.ac.uk/&#8203;compsci/&#8203;epo/&#8203;papers/&#8203;volume5/&#8203;issue1/ep057rf.pdf</a>; Accessed 25 Oct 2004<span class="local-copy"> (<a href="archive/cajun.cs.nott.ac.uk/compsci/epo/papers/volume5/issue1/ep057rf.pdf">local copy</a>)</span>.</dd>
 
-<dt><a id="Germán_1997" name="Germán_1997">[Germán 1997]</a></dt>
+<dt><a id="GermÃ¡n_1997" name="GermÃ¡n_1997">[GermÃ¡n 1997]</a></dt>
 
-<dd><span class="author">Germán, D. M.</span>; <span class="title">An Introduction to DSSSL</span>; 1997; Available from <a class="url" href="http://csgrs6k1.uwaterloo.ca/~dmg/dsssl/tutorial/tutorial.html">http://csgrs6k1.uwaterloo.ca/&#8203;~dmg/&#8203;dsssl/&#8203;tutorial/tutorial.html</a>; Accessed 25 Oct 2004<span class="local-copy"> (<a href="archive/csgrs6k1.uwaterloo.ca/~dmg/dsssl/tutorial/tutorial.html">local copy</a>)</span>.</dd>
+<dd><span class="author">GermÃ¡n, D. M.</span>; <span class="title">An Introduction to DSSSL</span>; 1997; Available from <a class="url" href="http://csgrs6k1.uwaterloo.ca/~dmg/dsssl/tutorial/tutorial.html">http://csgrs6k1.uwaterloo.ca/&#8203;~dmg/&#8203;dsssl/&#8203;tutorial/tutorial.html</a>; Accessed 25 Oct 2004<span class="local-copy"> (<a href="archive/csgrs6k1.uwaterloo.ca/~dmg/dsssl/tutorial/tutorial.html">local copy</a>)</span>.</dd>
 
 <dt><a id="GIF_1990" name="GIF_1990">[GIF 1990]</a></dt>
 
@@ -10354,7 +10354,7 @@ anchor { -o-link: next }
 
 <dt><a id="Graham_1992" name="Graham_1992">[Graham, et al. 1992]</a></dt>
 
-<dd><span class="author">Graham, S. L., Harrison, M. A. and Munson, E. V.</span>; <span class="title">The Proteus Presentation System</span>; University of California, Berkeley, California; The paper appeared in the Proceedings of the Fifth ACM SIGSOFT Symposium on Software Development Environments, Tyson's Corner, VA, December 9­11 1992;</dd>
+<dd><span class="author">Graham, S. L., Harrison, M. A. and Munson, E. V.</span>; <span class="title">The Proteus Presentation System</span>; University of California, Berkeley, California; The paper appeared in the Proceedings of the Fifth ACM SIGSOFT Symposium on Software Development Environments, Tyson's Corner, VA, December 9Â­11 1992;</dd>
 
 <dt><a id="Gramlich_1996" name="Gramlich_1996">[Gramlich 1996]</a></dt>
 
@@ -10509,7 +10509,7 @@ Features/PeopleWatch/FeaturedPeople/?feature_id=58</a>; Accessed 25 Oct 2004<spa
 
 <dt><a id="Munson_1996" name="Munson_1996">[Munson 1996]</a></dt>
 
-<dd><span class="author">Munson, E. V.</span>; <span class="title">A new presentation language for structured documents</span>; Electronic Publishing, Vol. 8 (2&amp;3), pp. 125­138 (June &amp; September 1995), Paper received 16 Apr 1996, revised 28 June 1996</dd>
+<dd><span class="author">Munson, E. V.</span>; <span class="title">A new presentation language for structured documents</span>; Electronic Publishing, Vol. 8 (2&amp;3), pp. 125Â­138 (June &amp; September 1995), Paper received 16 Apr 1996, revised 28 June 1996</dd>
 
 <dt><a id="Munson_1999" name="Munson_1999">[Munson&amp;Pfeiffer 1999]</a></dt>
 
@@ -10642,7 +10642,7 @@ Features/PeopleWatch/FeaturedPeople/?feature_id=58</a>; Accessed 25 Oct 2004<spa
 
 <dt><a id="Reid_1989" name="Reid_1989">[Reid 1989]</a></dt>
 
-<dd><span class="author">Reid, B. K.</span>; <span class="title">Electronic Mail of Structured Documents</span>; in André, J., Furuta, R., Quint, V. (editors) <span class="title">Structured Documents</span>, Cambridge University Press, 1989</dd>
+<dd><span class="author">Reid, B. K.</span>; <span class="title">Electronic Mail of Structured Documents</span>; in AndrÃ©, J., Furuta, R., Quint, V. (editors) <span class="title">Structured Documents</span>, Cambridge University Press, 1989</dd>
 
 <dt><a id="Rosenberg_1991" name="Rosenberg_1991">[Rosenberg et al. 1991]</a></dt>
 
@@ -10664,9 +10664,9 @@ Features/PeopleWatch/FeaturedPeople/?feature_id=58</a>; Accessed 25 Oct 2004<spa
 
 <dd><span class="title">Guest Editorial</span>; <span class="author">Sherman, M.</span>; ComputerNetworks and ISDN Systems; 21 (1991) pp. 145-147, North Holland Available from <a class="url" href="http://reports-archive.adm.cs.cmu.edu/anon/itc/CMU-ITC-102.pdf">http://reports-archive.adm.cs.cmu.edu/&#8203;anon/&#8203;itc/CMU-ITC-102.pdf</a>; Accessed 25 Oct 2004<span class="local-copy"> (<a href="archive/reports-archive.adm.cs.cmu.edu/anon/itc/CMU-ITC-102.pdf">local copy</a>)</span>.</dd>
 
-<dt><a id="Sorgaard_1996" name="Sorgaard_1996">[Sørgaard 1996]</a></dt>
+<dt><a id="Sorgaard_1996" name="Sorgaard_1996">[SÃ¸rgaard 1996]</a></dt>
 
-<dd><span class="author">Sørgaard, P. and Sandahl, T. I.</span>; <span class="title">Problems with Styles in Word Processing: A Weak Foundation for Electronic Publishing with SGML</span>; Published in the Proceedings of the 30th HICSS, Wailea, Hawaii, January 7-10, 1997</dd>
+<dd><span class="author">SÃ¸rgaard, P. and Sandahl, T. I.</span>; <span class="title">Problems with Styles in Word Processing: A Weak Foundation for Electronic Publishing with SGML</span>; Published in the Proceedings of the 30th HICSS, Wailea, Hawaii, January 7-10, 1997</dd>
 
 <dt><a id="Sperberg-McQueen_1994a" name="Sperberg-McQueen_1994a">[Sperberg-McQueen 1994a]</a></dt>
 
@@ -10699,7 +10699,7 @@ Features/PeopleWatch/FeaturedPeople/?feature_id=58</a>; Accessed 25 Oct 2004<spa
 
 <dt><a id="WD-CSS3-selectors" name="WD-CSS3-selectors">[WD-CSS3-selectors 2001]</a></dt>
 
-<dd><span class="author">Glazman, D., Çelik, T. and Hickson, I.</span>; <span class="title">Selectors</span>; W3C Candidate Recommendation, 13 Nov 2001; Available from <a class="url" href="http://www.w3.org/TR/2001/CR-css3-selectors-20011113">http://www.w3.org/&#8203;TR/&#8203;2001/CR-css3-selectors-20011113</a>; Accessed 25 Oct 2004.</dd>
+<dd><span class="author">Glazman, D., Ã‡elik, T. and Hickson, I.</span>; <span class="title">Selectors</span>; W3C Candidate Recommendation, 13 Nov 2001; Available from <a class="url" href="http://www.w3.org/TR/2001/CR-css3-selectors-20011113">http://www.w3.org/&#8203;TR/&#8203;2001/CR-css3-selectors-20011113</a>; Accessed 25 Oct 2004.</dd>
 
 <dt><a id="WD-hlink" name="WD-hlink">[WD-hlink]</a></dt>
 
