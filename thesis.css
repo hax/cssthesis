@@ -293,7 +293,7 @@ body>#menu {  /* this selector is a hack to hide "fixed" from IE */
 }
 
 #menu { top: 0px; left: 0px; width: 130px;  }
-:lang(zh) #menu { width: 170px; };
+:lang(zh) #menu { width: 170px; }
 #menu { padding: 10px 10px 10px;  color: white; background: #000; font-size: 12px; font-weight: bold; font-family: sans-serif  }
 #menu ul { margin: 0px; padding: 0px }
 #menu ul ul { margin-left: 10px;  }
